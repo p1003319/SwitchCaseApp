@@ -83,7 +83,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
             onClick = { switchCaseMessage = switchCase(userMessage) },
             modifier = Modifier.fillMaxWidth()) {
 
-            Text(text = "Update")
+            Text(text = "Change ")
         }
 
         SwitchCaseText(
@@ -114,6 +114,6 @@ fun SwitchCaseText(
 @Composable
 fun GreetingPreview() {
     SwitchCaseAppTheme {
-        Greeting("Android")
+        Greeting("Joe")
     }
 }
